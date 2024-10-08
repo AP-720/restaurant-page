@@ -1,25 +1,128 @@
 /* styles.css */
 
 :root {
-	--header-color: #DECCC1;
-	--page-width: 60%
+	--header-color: #deccc1;
+	--page-width: 75%;
+	--gradient: linear-gradient(
+		286deg,
+		rgba(222, 194, 193, 1) 0%,
+		rgba(193, 222, 213, 1) 100%
+	);
 }
 
 body {
-}
-
-header {
-	background-color: var(--header-color);
-	height: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
+	background-color: #f7f7f7;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+h1 {
+	color: #5e3d29;
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+/* Header and Nav Section */
+header {
+	background-color: var(--header-color);
+	width: 100vw;
+}
+
+.nav-container {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	width: var(--page-width);
+	margin: 0 auto;
 }
 
 nav {
 	display: flex;
 	justify-content: center;
-	/* gap: 25px; */
+	align-items: center;
+	gap: 8px;
+}
+
+nav > button {
+	font-size: 1.5rem;
+	border: 3px solid;
+	border-radius: 20px;
+	padding: 10px 25px;
+	background-color: #dec2c1;
+	color: #5e3d29;
+}
+
+nav > button:hover {
+	border: 3px solid #295e4d;
+	color: #5e2a29;
+	cursor: pointer;
+}
+
+/* Main Content */
+
+#content {
 	width: var(--page-width);
-	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: auto 0;
+}
+
+.home-main-container {
+	display: flex;
+	background: var(--gradient);
+	padding: 8% 8%;
+	gap: 50px;
+}
+
+.home-text-container {
+	background-color: #ffffff;
+	color: #5e3d29;
+	padding: 2%;
+	width: 50%;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.home-text-container > button {
+	font-size: 1.5rem;
+	border: 3px solid;
+	border-radius: 20px;
+	padding: 10px 25px;
+	background-color: #dec2c1;
+	color: #5e3d29;
+}
+
+.home-text-container > button:hover {
+	border: 3px solid #295e4d;
+	color: #5e2a29;
+	cursor: pointer;
+}
+
+.home-main-container > img {
+	height: 550px;
+	width: 550px;
+	object-fit: cover;
+	flex: 0 0 auto;
+	border-radius: 20px;
 }

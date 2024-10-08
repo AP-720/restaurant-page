@@ -1,3 +1,3 @@
-export class home {
+export class homePage {
 	constructor(parameters) {}
 }
