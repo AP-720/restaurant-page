@@ -194,7 +194,7 @@ th {
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .about-container img {
@@ -206,6 +206,5 @@ th {
 }
 
 .about-text p {
-	padding: 0 5%;
 	padding-top: 5%;
 }

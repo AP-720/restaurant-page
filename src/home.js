@@ -28,7 +28,9 @@ export class HomePage {
 		homeTextContainer.appendChild(introText);
 
 		const menuBtn = document.createElement("button");
+		menuBtn.setAttribute("type", "button");
 		menuBtn.textContent = "Menu";
+		menuBtn.dataset.menuBtn = "";
 		homeTextContainer.appendChild(menuBtn);
 
 		this.content.appendChild(homeContainer);
